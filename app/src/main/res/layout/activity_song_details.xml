@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.chandrakantchaturvedi.epaisedemo.Activity.SongDetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/singer_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/image"
+            android:minLines="2"
+            android:paddingTop="5dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/track_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/singer_name"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/image" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/track_name"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/image" />
+
+        <TextView
+            android:id="@+id/collectionCensoredName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/collectionPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/collectionCensoredName"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/trackPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/collectionPrice"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/collectionExplicitness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/trackPrice"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/trackExplicitness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/collectionExplicitness"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/songType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/trackExplicitness"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/songType"
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:id="@+id/song_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/country"
+            android:layout_marginTop="5dp" />
+    </RelativeLayout>
+
+</LinearLayout>
